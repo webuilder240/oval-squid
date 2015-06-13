@@ -1,0 +1,86 @@
+body {
+	font-weight:400;
+	background-color: rgb(241, 242, 246);
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.main-title {
+	font-size: 50px;
+}
+
+.main-color {
+	color: #9B59B6;
+}
+
+.main-color a{
+	color: #9B59B6;
+}
+
+.main-color a:hover{
+	color: #804399;
+}
+
+#content {
+    font-family: "Lucida Grande", "segoe UI", "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", Meiryo, Arial, sans-serif;
+}
+
+.main-header {
+	color: #FFF;
+	background-color: #9B59B6;
+	border-color: #9B59B6;
+}
+
+.front__index__list__article h2 {
+    font-size: 36px;
+}
+.front__index__list__article a:hover{
+    text-decoration: underline;
+}
+
+.navbar a{
+	color: #FFF;
+}
+
+.header_img_wrap {
+	width: 125px;
+	margin: 30px auto;
+}
+
+.well {
+	margin: 30px 0;
+	padding: 30px;
+}
+
+.well h1 {
+	margin: 30px 0;
+}
+
+.well h2 {
+	margin: 30px 0;
+}
+.well h3 {
+	margin: 30px 0;
+}
+.well h4 {
+	margin: 30px 0;
+}
+
+.well h5 {
+	margin: 30px 0;
+}
+.well h6 {
+	margin: 30px 0;
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+.pagination{
+    width: 100%;
+}

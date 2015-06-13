@@ -1,0 +1,68 @@
+.table .sq-admin__post_list__table__header__checkbox_area {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table .sq-admin__post_list__table__content__checkbox_area {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table .sq-admin__post_list__table__content__title_area {
+	padding: 20px 8px;
+}
+
+.table .sq-admin__post_list__table__content__status_area {
+	vertical-align: middle;
+}
+
+.sq-admin__post_list__table__content__status_area .label{
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.table .sq-admin__post_list__table__content__comments_area {
+	vertical-align: middle;
+}
+
+.table .sq-admin__post_list__table__content__date_area {
+	vertical-align: middle;
+}
+
+.sq-admin__edit_post__form__button__delete_button {
+	margin-right: 30px;
+}
+
+.sq-admin__edit_post__form__tag_area__panel_title {
+	font-weight: bold;
+}
+
+.sq-admin__edit_post__form__tag_area__tag {
+	font-size: 12px;
+}
+
+.sq-admin__edit_post__form__tag_area__submit {
+	margin-top: 10px;
+}
+
+.sq-admin__post_list__title__link__new_post {
+	margin-left: 10px;
+}
+
+.sq-admin__edit_post__form__sub_area__imgs__area {
+	margin: 0 auto;
+}
+
+.sq-admin__edit_post__form__sub_area__imgs__area .img-thumbnail {
+    height: 135px;
+}
+
+.login_form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.login_form_main_img {
+    width: 125px;
+    margin: 20px auto;
+}
