@@ -69,7 +69,9 @@ class SqAdminController extends AppController
 
     public function index()
     {
-		$posts = $this->Posts->find()->all();
+		$posts = $this->Posts->find()
+		->order(['Posts.modified' => 'DESC'])
+		->all();
 		$this->set(compact('posts'));
 		$this->set('_serialize','posts');
     }

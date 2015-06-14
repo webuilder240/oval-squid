@@ -9,6 +9,11 @@ use Cake\Event\Event;
 
 class FrontPageController extends AppController
 {
+	public $helpers = [
+		'Tanuck/Markdown.Markdown'  => [
+			'parser' => 'GithubMarkdown',
+		]
+	];
     public function initialize()
     {
         parent::initialize();
@@ -30,7 +35,10 @@ class FrontPageController extends AppController
      */
     public function index()
     {
-        $posts = $this->Posts->find()->where(['publish' => 1]);
+		$posts = $this->Posts->find()
+			->order(['Posts.modified' => 'DESC'])
+			->where(['publish' => 1]);
+
         $this->set('posts',$this->paginate($posts));
         $this->set('_serialize', ['posts']);
         $this->set('title','Webuilder240');

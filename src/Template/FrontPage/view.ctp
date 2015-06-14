@@ -7,7 +7,7 @@
 	<h4 class="text-right"><?= $post->created->format('Y/m/d');?></h4>
 	<div class="well">
 		<div class="entry-content">
-			<?= nl2br($post->content);?>
+			<?= $this->Markdown->transform($post->content);?>
 		</div>
 	</div>
 </div>
