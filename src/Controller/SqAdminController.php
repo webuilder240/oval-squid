@@ -25,28 +25,29 @@ class SqAdminController extends AppController
 		$this->Auth->allow(['logout','add']);
 	}
 
-	public function add()
-	{
-		$user = $this->Users->newEntity();
+	// 暫くの間はプライベートでの仕様のみを考慮して、コメントアウトしています。
+	//public function add()
+	//{
+	//	$user = $this->Users->newEntity();
 
-		if ($this->request->is('post')){
-			$user = $this->Users->patchEntity($user,$this->request->data);
-			if ($this->Users->save($user)){
+	//	if ($this->request->is('post')){
+	//		$user = $this->Users->patchEntity($user,$this->request->data);
+	//		if ($this->Users->save($user)){
 
-				$this->Flash->success('ユーザー登録完了しました。ログインして下さい。');
+	//			$this->Flash->success('ユーザー登録完了しました。ログインして下さい。');
 
-				return $this->redirect([
-					'controller' => 'SqAdmin',
-					'action' => 'login',
-				]);
-			
-			} else {
-				$this->Flash->error('保存できませんでした。入力内容を再度確認して下さい。');
-			}
-		}
+	//			return $this->redirect([
+	//				'controller' => 'SqAdmin',
+	//				'action' => 'login',
+	//			]);
+	//		
+	//		} else {
+	//			$this->Flash->error('保存できませんでした。入力内容を再度確認して下さい。');
+	//		}
+	//	}
 
-		$this->set(compact('user'));
-	}
+	//	$this->set(compact('user'));
+	//}
 
     public function login()
     {
