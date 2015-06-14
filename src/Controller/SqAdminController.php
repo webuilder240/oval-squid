@@ -16,7 +16,7 @@ class SqAdminController extends AppController
         parent::initialize();
         $this->Posts = TableRegistry::get('Posts');
         $this->Users = TableRegistry::get('Users');
-        $this->layout = 'BootstrapUI.default';
+        $this->layout = 'sq_admin';
     }
 
 	public function beforeFilter(Event $event)
