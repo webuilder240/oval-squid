@@ -1,4 +1,4 @@
-<div class="sq-admin__edit_post__form__main col-xs-18 col-md-9 clearfix">
+<div id="edit__vue__app" class="sq-admin__edit_post__form__main col-xs-18 col-md-9 clearfix">
 
 <?= $this->Form->create($post);?>
 
@@ -14,11 +14,12 @@
 		'rows' => 10,
 		'label' => 'ブログ本文',
 		'class' => 'sq-admin__edit_post__form__main__content',
+		'v-model' => 'Posts.content | countChars'
 	]);
 ?> 
 
 <p class="sq-admin__edit_post__form__main__char_nums text-right">
-	1000文字
+	{{content_count}}文字
 </p>
 
 <hr>

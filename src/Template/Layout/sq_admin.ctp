@@ -80,7 +80,8 @@ $this->prepend('script', $this->Html->script([
 		'vendor/jquery/dist/jquery.min.js',
 		'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
 		'vendor/vue/dist/vue.min.js',
-		'SqAdmin/app'])
+		'SqAdmin/app',
+		'SqAdmin/edit_vue'])
 	); 
 
 ?>
