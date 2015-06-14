@@ -78,7 +78,10 @@ class SqAdminController extends AppController
 
     public function edit_post($id)
     {
-        $post = $this->Posts->get($id);
+		$post = $this->Posts->find()
+			->where(['Posts.id' => $id])
+			->contain(['Tags'])
+			->first();
 		$this->__publish_post($post);
     }
 

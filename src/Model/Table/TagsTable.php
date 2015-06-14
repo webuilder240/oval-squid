@@ -1,17 +1,18 @@
 <?php
 namespace App\Model\Table;
 
-use App\Model\Entity\Post;
+use App\Model\Entity\Tag;
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
 /**
- * Posts Model
+ * Tags Model
  *
+ * @property \Cake\ORM\Association\BelongsToMany $Posts
  */
-class PostsTable extends Table
+class TagsTable extends Table
 {
 
     /**
@@ -22,13 +23,13 @@ class PostsTable extends Table
      */
     public function initialize(array $config)
     {
-        $this->table('posts');
-        $this->displayField('title');
+        $this->table('tags');
+        $this->displayField('name');
         $this->primaryKey('id');
         $this->addBehavior('Timestamp');
-        $this->belongsToMany('Tags', [
-            'foreignKey' => 'post_id',
-            'targetForeignKey' => 'tag_id',
+        $this->belongsToMany('Posts', [
+            'foreignKey' => 'tag_id',
+            'targetForeignKey' => 'post_id',
             'joinTable' => 'posts_tags'
         ]);
     }
@@ -46,17 +47,8 @@ class PostsTable extends Table
             ->allowEmpty('id', 'create');
             
         $validator
-            ->add('publish', 'valid', ['rule' => 'boolean'])
-            ->requirePresence('publish', 'create')
-            ->notEmpty('publish');
-            
-        $validator
-            ->requirePresence('title', 'create')
-            ->notEmpty('title');
-            
-        $validator
-            ->requirePresence('content', 'create')
-            ->notEmpty('content');
+            ->requirePresence('name', 'create')
+            ->notEmpty('name');
 
         return $validator;
     }

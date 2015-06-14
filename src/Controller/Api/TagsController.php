@@ -26,6 +26,11 @@ class TagsController extends ApiAppController
 
 	public function view($id)
 	{
+		$tags = $this->Tags->get($id);
+		$this->set([
+			'tags' => $tags,
+			'_serialize' => ['tags'],
+		]);
 	}
 
 	public function add()
