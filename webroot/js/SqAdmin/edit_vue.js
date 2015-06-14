@@ -5,7 +5,13 @@ var edit__vue = new Vue({
 			title: "",
 			content: "",
 		},
-		content_count: 0
+		content_count: 0,
+		Tags: [
+			{
+				id:"1",
+				name: "nick"
+			}	
+		]
 	},
 	filters: {
 		countChars : {
@@ -14,6 +20,9 @@ var edit__vue = new Vue({
 				return val;
 			}
 		}	
+	},
+	methods: {
+		
 	}
 });
 
