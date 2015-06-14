@@ -38,6 +38,7 @@
 }
 
 .sq-admin__edit_post__form__tag_area__tag {
+	margin: 0 3px;
 	font-size: 12px;
 }
 

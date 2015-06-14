@@ -1,4 +1,4 @@
-<div class="container theme-showcase" role="main">
+<div id="edit__vue__app" class="container theme-showcase" role="main">
 	<h2>新規投稿追加</h2>
 	<hr>
 	<?= $this->element('SqAdmin/_post_edit_form'); ?>

@@ -1,15 +1,19 @@
 var edit__vue = new Vue({
 	el: "#edit__vue__app",
 	data: {
+		content_count: 0,
 		Posts:{
 			title: "",
 			content: "",
 		},
-		content_count: 0,
-		Tags: [
+		Tags:[
 			{
-				id:"1",
+				id:1,
 				name: "nick"
+			},
+			{
+				id:2,
+				name: "nick-sensei"
 			}	
 		]
 	},
@@ -20,9 +24,6 @@ var edit__vue = new Vue({
 				return val;
 			}
 		}	
-	},
-	methods: {
-		
 	}
 });
 

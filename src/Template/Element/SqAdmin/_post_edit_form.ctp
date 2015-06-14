@@ -1,4 +1,4 @@
-<div id="edit__vue__app" class="sq-admin__edit_post__form__main col-xs-18 col-md-9 clearfix">
+<div class="sq-admin__edit_post__form__main col-xs-18 col-md-9 clearfix">
 
 <?= $this->Form->create($post);?>
 
@@ -69,7 +69,9 @@
 			</div>
 		</div>
 	</div>
+
 	<?= $this->element('SqAdmin/_post_edit_tags_area');?>
+
 </div>
 <?= $this->element('SqAdmin/Modal/_img_upload_modal');?>
 <?= $this->element('SqAdmin/Modal/_img_lists_modal');?>
