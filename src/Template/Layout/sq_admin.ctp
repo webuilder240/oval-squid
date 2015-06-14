@@ -76,7 +76,12 @@ $this->prepend('css', $this->Html->css(['//maxcdn.bootstrapcdn.com/bootstrap/3.3
 $this->append('css', $html5Shim);
 
 
-$this->prepend('script', $this->Html->script(['http://code.jquery.com/jquery-1.11.3.min.js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js','SqAdmin/app'])); 
+$this->prepend('script', $this->Html->script([
+		'vendor/jquery/dist/jquery.min.js',
+		'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
+		'vendor/vue/dist/vue.min.js',
+		'SqAdmin/app'])
+	); 
 
 ?>
 <!DOCTYPE html>
@@ -98,12 +103,6 @@ $this->prepend('script', $this->Html->script(['http://code.jquery.com/jquery-1.1
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
 				<a class="navbar-brand" href="
 					<?= $this->Url->build([
 						'controller' => 'SqAdmin',

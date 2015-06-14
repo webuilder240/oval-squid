@@ -1,0 +1,31 @@
+{
+  "name": "oval-squid",
+  "version": "0.0.1",
+  "description": "simple blog tool",
+  "main": "webroot/js/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webuilder240/oval-squid.git"
+  },
+  "author": "webuilder240",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webuilder240/oval-squid/issues"
+  },
+  "homepage": "https://github.com/webuilder240/oval-squid#readme",
+  "dependencies": {
+    "bower": "^1.4.1",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.9.0",
+    "gulp-coffee": "^2.3.1",
+    "gulp-watch": "^4.2.4",
+    "node-libs-browser": "^0.5.2"
+  }
+}
